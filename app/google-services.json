@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "7401662821",
+    "project_id": "register-78c9f",
+    "storage_bucket": "register-78c9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7401662821:android:4215b7cf933cbbf05f598c",
+        "android_client_info": {
+          "package_name": "com.example.alliase5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7401662821-1d5i8f970id2bqcjboe4hnso270uf3a0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8BXq1ftDFP3cHUUWHFWF-1unTwH1pBZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7401662821-1d5i8f970id2bqcjboe4hnso270uf3a0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

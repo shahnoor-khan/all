@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alliase_nav"
+    app:startDestination="@id/home2">
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.alliase.menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.alliase.profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/home1"
+        android:name="com.example.alliase.home1"
+        android:label="fragment_home1"
+        tools:layout="@layout/fragment_home1" >
+        <action
+            android:id="@+id/action_home1_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.alliase.home2"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" >
+        <action
+            android:id="@+id/action_home2_to_login_reg"
+            app:destination="@id/login_reg" />
+        <action
+            android:id="@+id/action_home2_to_home1"
+            app:destination="@id/home1" />
+        <action
+            android:id="@+id/action_home2_to_register2"
+            app:destination="@id/register2" />
+    </fragment>
+    <fragment
+        android:id="@+id/register2"
+        android:name="com.example.alliase.register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register2_to_home1"
+            app:destination="@id/home1"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+            android:id="@+id/login_reg"
+            android:name="com.example.alliase.login_reg"
+            android:label="fragment_login_reg"
+            tools:layout="@layout/fragment_login_reg" />
+
+</navigation>
