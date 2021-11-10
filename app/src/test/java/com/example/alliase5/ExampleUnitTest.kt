@@ -1,4 +1,4 @@
-package com.example.alliase
+package com.example.alliase5
 
 import org.junit.Test
 

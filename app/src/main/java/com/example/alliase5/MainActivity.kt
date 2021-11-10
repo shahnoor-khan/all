@@ -1,4 +1,4 @@
-package com.example.alliase
+package com.example.alliase5
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

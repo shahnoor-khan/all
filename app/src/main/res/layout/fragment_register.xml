@@ -8,7 +8,7 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="600dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,9 +25,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:hint="Name"
             app:helperText="@string/Required"
-            app:helperTextTextColor="@color/red"
-            android:hint="Name">
+            app:helperTextTextColor="@color/red">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -41,11 +41,11 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:helperTextTextColor="@color/red"
             android:layout_below="@+id/name"
             android:layout_alignParentStart="true"
+            android:hint="Father name"
             app:helperText="@string/Required"
-            android:hint="Father name">
+            app:helperTextTextColor="@color/red">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -54,33 +54,33 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:id="@+id/mom"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
             android:layout_below="@id/dad"
-            app:helperText="@string/Required"
-            app:helperTextTextColor="@color/red"
-            android:hint="Mother name">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textShortMessage" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:id="@+id/age"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            app:helperTextTextColor="@color/red"
+            android:hint="Mother name"
             app:helperText="@string/Required"
+            app:helperTextTextColor="@color/red">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textShortMessage" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/age"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mom"
+            android:layout_alignParentStart="true"
             android:hint="Age"
-            android:layout_below="@id/mom">
+            app:helperText="@string/Required"
+            app:helperTextTextColor="@color/red">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -89,21 +89,21 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:id="@+id/gender"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:helperTextTextColor="@color/red"
             android:layout_below="@id/age"
             android:layout_alignParentStart="true"
-            app:helperText="@string/Required"
+            android:layout_alignParentEnd="true"
             android:hint="Gender"
-            android:layout_alignParentEnd="true">
+            app:helperText="@string/Required"
+            app:helperTextTextColor="@color/red">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textShortMessage"/>
+                android:inputType="textShortMessage" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -120,7 +120,6 @@
                 android:layout_height="wrap_content"
                 android:inputType="textLongMessage" />
         </com.google.android.material.textfield.TextInputLayout>
-
 
 
     </RelativeLayout>

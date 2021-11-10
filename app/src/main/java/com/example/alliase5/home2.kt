@@ -1,9 +1,10 @@
-package com.example.alliase
+package com.example.alliase5
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
@@ -15,10 +16,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [home1.newInstance] factory method to
+ * Use the [home2.newInstance] factory method to
  * create an instance of this fragment.
  */
-class home1 : Fragment() {
+class home2 : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -36,15 +37,14 @@ class home1 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home1, container, false)
+        return inflater.inflate(R.layout.fragment_home2, container, false)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
-        //view.findViewById<ImageView>(R.id.menu2).setOnClickListener { navController.navigate(R.id.action_home1_to_menu) }
+        view.findViewById<TextView>(R.id.skip2).setOnClickListener { navController.navigate(R.id.action_home2_to_home1) }
+        view.findViewById<TextView>(R.id.register).setOnClickListener { navController.navigate(R.id.action_home2_to_register2) }
     }
-
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -52,12 +52,12 @@ class home1 : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment home1.
+         * @return A new instance of fragment home2.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            home1().apply {
+            home2().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

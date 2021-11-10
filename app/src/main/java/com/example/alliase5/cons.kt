@@ -1,10 +1,14 @@
-package com.example.alliase
+package com.example.alliase5
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -13,10 +17,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [profile.newInstance] factory method to
+ * Use the [cons.newInstance] factory method to
  * create an instance of this fragment.
  */
-class profile : Fragment() {
+class cons : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -34,7 +38,28 @@ class profile : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        return inflater.inflate(R.layout.fragment_cons, container, false)
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val a: TextView = view.findViewById<TextView>(R.id.shaaaaa)
+        var b = ""
+        val d = Firebase.firestore
+        d.collection("data").document("shanoor")
+            .get()
+            .addOnSuccessListener { document ->
+                if (document!= null){
+                    b =  (document.data?.get("name") as String)
+                    a.text = b
+                    Log.d("tag","document sended")
+                }
+
+            }
+            .addOnFailureListener { ex ->
+                Log.w("tag","error",ex)
+            }
     }
 
     companion object {
@@ -44,12 +69,12 @@ class profile : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment profile.
+         * @return A new instance of fragment cons.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            profile().apply {
+            cons().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
