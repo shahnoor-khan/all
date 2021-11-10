@@ -1,13 +1,11 @@
 package com.example.alliase5
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 
 // TODO: Rename parameter arguments, choose names that match
@@ -36,22 +34,16 @@ class home1 : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {try{
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home1, container, false)
-    }catch (e:Exception){
-        Log.d("tag","$e")
+    ): View? {
 
-    } finally {
         return inflater.inflate(R.layout.fragment_home1, container, false)
-    }   }
+      }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        navController = Navigation.findNavController(view)
         val dataa = datasource().load()
         val recy = view.findViewById<RecyclerView>(R.id.rey)
-        recy.adapter = Adapter(dataa as ArrayList<data>,this)
+        Adapter(dataa ,this).also { recy.adapter = it }
         recy.setHasFixedSize(true)
 
     }

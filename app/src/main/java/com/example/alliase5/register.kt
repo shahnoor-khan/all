@@ -42,16 +42,9 @@ class register : Fragment() {
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
         ): View ?{
-            try {
-            // Inflate the layout for this fragment
-            return inflater.inflate(R.layout.fragment_register, container, false)
-            }catch (Exception:Exception ){
-            Log.d("tag","$Exception")
-            }
-            finally {
                 return inflater.inflate(R.layout.fragment_register, container, false)
             }
-        }
+
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
