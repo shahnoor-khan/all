@@ -14,4 +14,6 @@
     <string name="report">Report</string>
     <string name="help">Help</string>
     <string name="profile">Profile</string>
+    <string name="mother_name">Mother name</string>
+    <string name="recent">recent</string>
 </resources>

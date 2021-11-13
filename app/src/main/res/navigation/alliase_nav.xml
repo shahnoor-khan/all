@@ -13,7 +13,20 @@
         android:id="@+id/home1"
         android:name="com.example.alliase5.home1"
         android:label="fragment_home1"
-        tools:layout="@layout/fragment_home1" />
+        tools:layout="@layout/fragment_home1" >
+        <action
+            android:id="@+id/action_home1_to_notification"
+            app:destination="@id/sha" />
+        <action
+            android:id="@+id/action_home1_to_recent"
+            app:destination="@id/cons" />
+        <action
+            android:id="@+id/action_home1_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_home1_to_apperance2"
+            app:destination="@id/apperance2" />
+    </fragment>
     <fragment
         android:id="@+id/home2"
         android:name="com.example.alliase5.home2"
@@ -47,8 +60,9 @@
         android:label="fragment_cons"
         tools:layout="@layout/fragment_cons" />
     <fragment
-        android:id="@+id/login_reg"
-        android:name="com.example.alliase5.login_reg"
-        android:label="login_reg" />
+        android:id="@+id/apperance2"
+        android:name="com.example.alliase5.apperance"
+        android:label="fragment_apperance"
+        tools:layout="@layout/fragment_apperance" />
 
 </navigation>

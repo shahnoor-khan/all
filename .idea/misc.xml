@@ -13,10 +13,11 @@
         <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/layout/appbar.xml" value="0.1" />
         <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/layout/card.xml" value="0.2" />
         <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/layout/cont.xml" value="0.1" />
+        <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/layout/fragment_apperance.xml" value="0.16486486486486487" />
         <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/layout/fragment_con.xml" value="0.1" />
         <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/layout/fragment_cons.xml" value="0.1" />
         <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/layout/fragment_home.xml" value="0.2" />
-        <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/layout/fragment_home1.xml" value="0.136" />
+        <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/layout/fragment_home1.xml" value="0.1" />
         <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/layout/fragment_home2.xml" value="0.152" />
         <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/layout/fragment_home_12.xml" value="0.13524590163934427" />
         <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/layout/fragment_home_view.xml" value="0.1" />
@@ -28,6 +29,7 @@
         <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/layout/header.xml" value="0.1" />
         <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/menu/bottom.xml" value="0.1" />
         <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/menu/menu.xml" value="0.152" />
+        <entry key="..\:/Users/dell/Downloads/alliase2/app/src/main/res/menu/tool.xml" value="0.16486486486486487" />
       </map>
     </option>
   </component>

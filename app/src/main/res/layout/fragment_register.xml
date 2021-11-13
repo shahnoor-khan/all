@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    style="@style/NoActionBar"
     android:layout_height="match_parent"
     tools:context=".register">
 
@@ -60,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/dad"
             android:layout_alignParentStart="true"
-            android:hint="Mother name"
+            android:hint="@string/mother_name"
             app:helperText="@string/Required"
             app:helperTextTextColor="@color/red">
 
@@ -85,7 +86,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textShortMessage" />
+                android:inputType="textShortMessage"
+                tools:ignore="TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
